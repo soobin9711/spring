@@ -65,21 +65,21 @@ java Spring framework를 이용하여 Spring Boot 로 어플리케이션 띄우�
 - MVC : Model - View - Controller 패턴
 
 1. 프로젝트를 위한 spring boot 프로젝트 새로 생성 (start.spring.io)
-- Dependencies:
-   - Spring Web(building web using Tomcat servelet)
-   - DevTools(developer tool?)
-   - Lombok (java annotaion library to reduce "boilerplate code" -> generate getters and setters automatically)
-   - MariaDB Driver (to use mariaDB)
-   - Tymeleaf (template to build html -> 뷰 구성 툴)
-   - JPA (persisting data in SQL?)
-   - H2 (SQL database?)
-   
+	- Dependencies:
+		- Spring Web(building web using Tomcat servelet)
+		- DevTools(developer tool?)
+		- Lombok (java annotaion library to reduce "boilerplate code" -> generate getters and setters automatically)
+		- MariaDB Driver (to use mariaDB)
+		- Tymeleaf (template to build html -> 뷰 구성 툴)
+		- JPA (persisting data in SQL?)
+		- H2 (SQL database?)
+
 2. MariaDB 를 SpringBoot에 연동
   1) 테이블 생성 (user name: root, pwd: mint) 1- MySQL Client 에서 pw 를 사용하여 데이터베이스 접속 2- create database soodb; 3- show databases;
   2) intelliJ에서 application.properties 파일에 mariaDB dependency 추가
 
 3. Model Entity 에 해당하는 User.java 추가
-  - id, firstName, lastName, emailID
+	- id, firstName, lastName, emailID
   
 4. UserRepository.java 인터페이스 생성
 
@@ -91,14 +91,13 @@ java Spring framework를 이용하여 Spring Boot 로 어플리케이션 띄우�
 
   1) Create data - POST : http://localhost:8080/api/v1/users
    ![first create data page](https://github.com/soobin9711/spring/blob/4ecbbd2bb85b05676f00a27eb4b514a013acdbfb/first1.png)
-   
-   - Error msg: \Content type 'text/plain;charset=UTF-8' not supported
-     - 해결: Headers 중 Content-Type:application/json 추가
+
+	- Error msg: \Content type 'text/plain;charset=UTF-8' not supported
+    	- 해결: Headers 중 Content-Type:application/json 추가
 
   2) Read data - GET: http://localhost:8080/api/v1/users/1 (삽입된 데이터의 id 가 1일 경우)
-    
-   - Error msg: Constructor for User (정확한 에러가 기억이 안남 ㅠ constructor 가 필요하다는 뜻)
-     - 해결: User.java 에 빈 constructor 코드 추가
+	- Error msg: Constructor for User (정확한 에러가 기억이 안남 ㅠ constructor 가 필요하다는 뜻)
+		- 해결: User.java 에 빈 constructor 코드 추가
       
   3) Read all data in db - GET: http://localhost:8080/api/v1/users
 
