@@ -79,7 +79,7 @@ java Spring framework를 이용하여 Spring Boot 로 어플리케이션 띄우�
   2) intelliJ에서 application.properties 파일에 mariaDB dependency 추가
 
 3. Model Entity 에 해당하는 User.java 추가
-	- id, firstName, lastName, emailID
+	- 필드: id, firstName, lastName, emailID
   
 4. UserRepository.java 인터페이스 생성
 
@@ -124,7 +124,7 @@ java Spring framework를 이용하여 Spring Boot 로 어플리케이션 띄우�
     - ![first index](https://github.com/soobin9711/spring/blob/399cb8bc819623ccc11f1709689f028318692146/%ED%99%94%EB%A9%B4%20%EC%BA%A1%EC%B2%98%202021-08-23%20170321.png)
     
   - mint - web 프로젝트 새로 생성 (MVC 모델에서 Service 추가 포함)
-    - User.java(Entity), UserController.java, UserRepository.java, UserService.java, UserServiceImpl.java
+  	- User.java(Entity), UserController.java, UserRepository.java, UserService.java, UserServiceImpl.java
 
 
 ### 어려웠던 점
