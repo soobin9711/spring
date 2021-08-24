@@ -104,7 +104,7 @@ java Spring framework를 이용하여 Spring Boot 로 어플리케이션 띄우�
 
   5) Delete data - DELETE: http://localhost:8080/api/v1/users/1
   
-  ![postman delete complete json](https://github.com/soobin9711/spring/main/delete.png)
+  ![postman delete complete json](delete.png)
     
 ### 08/13 (금) - 중간 점검 & 이론 공부
 - Feedback:
