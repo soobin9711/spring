@@ -61,7 +61,7 @@ java Spring framework를 이용하여 Spring Boot 로 어플리케이션 띄우�
 - jar 로 실행하는 java 어플리케이션을 만들 수 있다
 - build tool: Maven (pom.xml), Gradle(build.gradle)
 
-### 2021/08/11 일지
+## 2021/08/11 일지
 - MVC : Model - View - Controller 패턴
 
 1. 프로젝트를 위한 spring boot 프로젝트 새로 생성 (start.spring.io)
@@ -107,7 +107,7 @@ java Spring framework를 이용하여 Spring Boot 로 어플리케이션 띄우�
   
   ![postman delete complete json](https://github.com/soobin9711/spring/blob/4ecbbd2bb85b05676f00a27eb4b514a013acdbfb/delete.png)
     
-### 08/13 (금) - 중간 점검 & 이론 공부
+## 08/13 (금) - 중간 점검 & 이론 공부
 - Feedback:
   - PUT, DELETE 방식 사용안함 (과거 금융권 보안 이슈) -> GET이랑 POST만 쓸 것
   - utf8 말고 utfmb4 (mySQL) : emoji 사용 시 
@@ -115,8 +115,8 @@ java Spring framework를 이용하여 Spring Boot 로 어플리케이션 띄우�
 - Q:
   - Spring 에서 index.html 파일 이름 제한? - 설정에서 바꿀 수 있음
 
-### 08/17 (화), 18 (수) , 20 (금) 일지
-#### 완료
+## 08/17 (화), 18 (수) , 20 (금) 일지
+### 완료
   - html
     - 전체 데이터 조회하는 홈페이지 구현 성공 (index.html)
     - 입력하는 페이지 구현 성공 (newUser.html)
@@ -127,14 +127,14 @@ java Spring framework를 이용하여 Spring Boot 로 어플리케이션 띄우�
     - User.java(Entity), UserController.java, UserRepository.java, UserService.java, UserServiceImpl.java
 
 
-#### 어려웠던 점
+### 어려웠던 점
   - 기존 mint-rest (REST API & JPA) 프로젝트의 경우 RestController를 사용했는데 리턴하는 값이 페이지가 아니라 데이터 자체여서 html 구현하는 방법에서 많이 헤맸다 ----> Controller 를 사용하는 mint-web 프로젝트 새로 생성 
   - 참고하는 책에 의하면 ajax 통신 방법을 사용하라는데, 비동기식 방법이 무엇인지 몰라 많이 헤맸으나 부서 사람들의 도움으로 이해 성공
   - emailId 라는 필드를 설정해놓았으나 html 파일에는 emailID 라고 표기하는 바람에 계속 오류가 떠서 헤맸다
   - github 커밋을 하지 못했다
   
-### 8/23 (월) 일지
-#### 중간점검: 앞으로 TO-DO (우선 순위 순)
+## 8/23 (월) 일지
+### 중간점검: 앞으로 TO-DO (우선 순위 순)
 - VIEW (html) 
   - html 수정 페이지 마무리
   - 삭제 기능 수행 시 경고메시지 혹은 팝업 혹은 안내 메시지 등 삭제 전 표시 (사용자가 실수로 삭제해버릴 경우를 대비)
@@ -145,14 +145,14 @@ java Spring framework를 이용하여 Spring Boot 로 어플리케이션 띄우�
 - html pagination 페이징 기능 추가!
 - jmeter 성능 테스트
 
-#### 완료
+### 완료
 - html 수정 페이지 구현 성공
 
-#### 어려웠던 점
+### 어려웠던 점
 - github push 강제로 시켰다가 이전 프로젝트 모두 override 되버려서 없어짐... -f 혹은 sudo 는 조심하자!
 
-### 8/24 (화) 일지
-#### 완료
+## 8/24 (화) 일지
+### 완료
 - 유저가 emailId 입력 시 이메일 포맷만 입력 가능하도록 구현: [참고한 링크](https://www.w3schools.com/html/html_form_input_types.asp)
 - 유저가 데이터 입력 시 필수로 입력하도록 설정 [참고한 링크](https://www.w3schools.com/html/html_form_input_types.asp)
 - mariaDB 한글과 이모지 데이터 입력 가능 설정: [참고한 링크](https://juniwoo.tistory.com/4),[참고한 자료](https://nakanara.tistory.com/230)
@@ -161,7 +161,7 @@ java Spring framework를 이용하여 Spring Boot 로 어플리케이션 띄우�
 
 ![duplicate alert page](https://github.com/soobin9711/spring/blob/4ecbbd2bb85b05676f00a27eb4b514a013acdbfb/duplicate.png)
 
-#### 어려웠던 점
+### 어려웠던 점
 - db 암호화 기능이 빨리 끝날 줄 알고 시도했으나 실패. 검색해봐도 너무 다양하게 시도할 수 있어서, 여러 방법을 해봤지만 모두 암호화 이외의 과정 중 여러 설정 오류나 다른 기능과 부딪혀 실패... 우선 순위가 아니니 다음에 도전하기로..!
 - 깃헙 복구 작업 ^^
 
