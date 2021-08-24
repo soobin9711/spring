@@ -40,7 +40,7 @@ java Spring framework를 이용하여 Spring Boot 로 어플리케이션 띄우�
             ```
 
      - http://localhost:8080 접속하여 확인
-     ![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+     ![first spring boot page](https://github.com/soobin9711/spring/main/first.png)
 
  - 단축키
     - 프로젝트 창: alt+1
@@ -89,7 +89,9 @@ java Spring framework를 이용하여 Spring Boot 로 어플리케이션 띄우�
 7. Testing with Postman Client
 
   1) Create data - POST : http://localhost:8080/api/v1/users
-      - Error msg: \Content type 'text/plain;charset=UTF-8' not supported
+   ![first create data page](https://github.com/soobin9711/spring/main/first1.png)
+   
+     - Error msg: \Content type 'text/plain;charset=UTF-8' not supported
         - 해결: Headers 중 Content-Type:application/json 추가
 
   2) Read data - GET: http://localhost:8080/api/v1/users/1 (삽입된 데이터의 id 가 1일 경우)
@@ -101,6 +103,8 @@ java Spring framework를 이용하여 Spring Boot 로 어플리케이션 띄우�
   4) Update data - PUT: http://localhost:8080/api/v1/users/1
 
   5) Delete data - DELETE: http://localhost:8080/api/v1/users/1
+  
+  ![postman delete complete json](https://github.com/soobin9711/spring/main/delete.png)
     
 ### 08/13 (금) - 중간 점검 & 이론 공부
 - Feedback:
@@ -150,6 +154,7 @@ java Spring framework를 이용하여 Spring Boot 로 어플리케이션 띄우�
 - mariaDB 한글과 이모지 데이터 입력 가능 설정: [참고한 링크](https://juniwoo.tistory.com/4),[참고한 자료](https://nakanara.tistory.com/230)
   - 과정 중 mysql 접속 불가 오류가 떠서 해결: 로컬에서 mariadb 에러 로그 파일 확인 후 수정 + [참고한 링크](https://stackoverflow.com/questions/10892689/cant-connect-to-mysql-server-on-localhost-10061-after-installation#:~:text=The%20error%20(2003)%20Can',one%20configured%20on%20the%20server.)
 - 유저가 중복 데이터 입력 시 db에서 확인 할 수 있는 유니크 키를 emailId로 설정: [참고한 링크](https://reddb.tistory.com/120?category=925278)
+![duplicate alert page](https://github.com/soobin9711/spring/main/duplicate.png)
 
 #### 어려웠던 점
 - db 암호화 기능이 빨리 끝날 줄 알고 시도했으나 실패. 검색해봐도 너무 다양하게 시도할 수 있어서, 여러 방법을 해봤지만 모두 암호화 이외의 과정 중 여러 설정 오류나 다른 기능과 부딪혀 실패... 우선 순위가 아니니 다음에 도전하기로..!
