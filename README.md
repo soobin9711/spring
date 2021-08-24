@@ -121,9 +121,11 @@ java Spring framework를 이용하여 Spring Boot 로 어플리케이션 띄우�
     - 전체 데이터 조회하는 홈페이지 구현 성공 (index.html)
     - 입력하는 페이지 구현 성공 (newUser.html)
     - 삭제 기능 구현 성공
+    - ![first index](https://github.com/soobin9711/spring/blob/399cb8bc819623ccc11f1709689f028318692146/%ED%99%94%EB%A9%B4%20%EC%BA%A1%EC%B2%98%202021-08-23%20170321.png)
+    
   - mint - web 프로젝트 새로 생성 (MVC 모델에서 Service 추가 포함)
     - User.java(Entity), UserController.java, UserRepository.java, UserService.java, UserServiceImpl.java
-![first index](https://github.com/soobin9711/spring/blob/399cb8bc819623ccc11f1709689f028318692146/%ED%99%94%EB%A9%B4%20%EC%BA%A1%EC%B2%98%202021-08-23%20170321.png)
+
 
 #### 어려웠던 점
   - 기존 mint-rest (REST API & JPA) 프로젝트의 경우 RestController를 사용했는데 리턴하는 값이 페이지가 아니라 데이터 자체여서 html 구현하는 방법에서 많이 헤맸다 ----> Controller 를 사용하는 mint-web 프로젝트 새로 생성 
