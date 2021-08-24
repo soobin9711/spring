@@ -96,8 +96,9 @@ java Spring framework를 이용하여 Spring Boot 로 어플리케이션 띄우�
      - 해결: Headers 중 Content-Type:application/json 추가
 
   2) Read data - GET: http://localhost:8080/api/v1/users/1 (삽입된 데이터의 id 가 1일 경우)
-    - Error msg: Constructor for User (정확한 에러가 기억이 안남 ㅠ constructor 가 필요하다는 뜻)
-      - 해결: User.java 에 빈 constructor 코드 추가
+    
+   - Error msg: Constructor for User (정확한 에러가 기억이 안남 ㅠ constructor 가 필요하다는 뜻)
+     - 해결: User.java 에 빈 constructor 코드 추가
       
   3) Read all data in db - GET: http://localhost:8080/api/v1/users
 
