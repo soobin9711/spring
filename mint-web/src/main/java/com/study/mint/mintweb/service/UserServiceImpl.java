@@ -43,4 +43,9 @@ public class UserServiceImpl implements UserService{
         this.userRepository.deleteById(id);
 
     }
+
+   // @Override
+    //public int duplicateCheck(User user)throws Exception{
+     //   int result = User.duplicateCheck(user);
+   // }
 }

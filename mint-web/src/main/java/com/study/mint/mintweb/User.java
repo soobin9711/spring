@@ -58,5 +58,9 @@ public class User {
     public void setEmailId(String emailId) {
         this.emailId = emailId;
     }
+
+    public int duplicateCheck(User user) throws Exception {
+        return 0;
+    }
 }
 
