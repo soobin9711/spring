@@ -13,11 +13,11 @@
     <h2>Save User</h2>
 
     <form action="#" th:action="@{/save}" th:object="${user}" method="POST">
-        <input type="text" th:field="*{firstName}" placeholder="Enter First Name" class="form-control mb-4 col-4" required>
+        <input type="text" th:field="*{firstName}" placeholder="Enter First Name" required>
 
-        <input type="text" th:field="*{lastName}" placeholder="Enter Last Name" class="form-control mb-4 col-4" required>
+        <input type="text" th:field="*{lastName}" placeholder="Enter Last Name"  required>
 
-        <input type="email" th:field="*{emailId}" placeholder="Enter Email" class="form-control mb-4 col-4" required>
+        <input type="email" th:field="*{emailId}" placeholder="Enter Email" required>
 
         <button type="submit" class="btn btn-info col-2"> Save User</button>
     </form>

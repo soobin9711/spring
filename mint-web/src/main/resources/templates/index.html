@@ -27,7 +27,26 @@
             <td th:text="${user.lastName}"></td>
             <td th:text="${user.emailId}"></td>
             <td> <a th:href="@{/updateForm/{id}(id=${user.id})}" class="btn btn-primary">Update</a>
-                <a th:href="@{/deleteUser/{id}(id=${user.id})}" class="btn btn-danger">Delete</a>
+                <!-- <input type="button" value="Delete" class="btn btn-danger" onclick="button_event();">
+
+
+                <button type="button" onclick="DeleteAction()" class="btn btn-danger">Delete</button>
+
+                <script type="text/javascript">
+                    function DeleteAction(e){
+                    if(confirm("정말로 삭제할거야?")){
+                        alert("삭제완료");
+                    }
+                    else{
+                        alert("삭제가 취소되었습니다");
+                    }
+                </script>
+                -->
+                <a th:href="@{/deleteUser/{id}(id=${user.id})}" class="btn btn-danger"
+                   onclick="return confirm('정말 삭제?');">Delete</a>
+
+                <!--<a th:href="@{/}" class="btn btn-danger"
+                    onclick="if(!confirm('정말 삭제?')){alert('삭제취소')}">Delete</a> -->
             </td>
         </tr>
         </tbody>
