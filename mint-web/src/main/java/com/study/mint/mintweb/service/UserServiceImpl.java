@@ -45,7 +45,7 @@ public class UserServiceImpl implements UserService{
     }
 
    // @Override
-    //public int duplicateCheck(User user)throws Exception{
+    //public int duplicateCheck(User user) throws Exception{
      //   int result = User.duplicateCheck(user);
    // }
 }
