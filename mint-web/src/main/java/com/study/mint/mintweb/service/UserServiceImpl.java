@@ -3,10 +3,13 @@ package com.study.mint.mintweb.service;
 import java.util.List;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Service;
-
 import com.study.mint.mintweb.User;
 import com.study.mint.mintweb.UserRepository;
+
+import org.springframework.validation.Validator;
+import org.springframework.validation.Errors;
 
 @Service
 public class UserServiceImpl implements UserService{
@@ -21,7 +24,15 @@ public class UserServiceImpl implements UserService{
 
     @Override
     public void save(User user) {
-        this.userRepository.save(user);
+        //this.userRepository.save(user);
+
+
+        try{
+            this.userRepository.save(user);
+        }
+        catch(DataIntegrityViolationException e){
+            System.out.println("이미 존재하는 email 입니다");
+        }
 
     }
 

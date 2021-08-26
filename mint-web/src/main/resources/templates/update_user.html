@@ -17,7 +17,8 @@
         <input type="text" th:field="*{firstName}" required>
         <input type="text" th:field="*{lastName}"  required>
         <input type="email" th:field="*{emailId}" required>
-        <button type="submit" class="btn btn-info col-2" value="Click" onclick="alert('수정 완료')"> Update User</button>
+        <button type="submit" class="btn btn-info col-2" value="Click"
+                th:onclick="alert('수정 완료')"> Update User</button>
 
     </form>
     <hr>
