@@ -193,3 +193,7 @@ java Spring framework를 이용하여 Spring Boot 로 어플리케이션 띄우�
 - 빨리 많이 하고 싶은 마음은 앞서는데 따라가지 못하는 중이라고 느낌 2
 - 이것저것 하다보면 궁금한게 생겨서 자꾸 서치하면서 다른 길로 새면서 시간이 금방 감 
 
+
+## 8/30
+db paging
+![db](https://github.com/soobin9711/spring/blob/7cd8637448e8fe03fc1305c2d237ed81929cf854/DB.png)
